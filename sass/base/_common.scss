@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    padding-top: 80px;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
