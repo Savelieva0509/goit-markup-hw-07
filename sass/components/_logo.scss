@@ -12,7 +12,6 @@
     color: var(--primary-black-color);
 }
 
-
 .logo--white {
     color: var(--primary-white-color);
 }
@@ -20,4 +19,14 @@
 
 .logo--accent {
     color: var(--accent-color);
+}
+
+.logo--header {
+    display: block;
+    padding: 24px 0;
+}
+
+.logo--footer {
+    margin-bottom: 20px;
+    display: inline-block;
 }

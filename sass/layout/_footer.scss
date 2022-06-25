@@ -7,13 +7,9 @@ footer {
     margin-right: 70px;
 }
 
-.logo--white {
-    color: var(--primary-white-color);
-}
-
-.logo--footer {
-    margin-bottom: 20px;
-    display: inline-block;
+.footer-page {
+    display: flex;
+    align-items: baseline;
 }
 
 .footer-contacts__link {
@@ -34,10 +30,6 @@ footer {
     color: var(--primary-white-color);
 }
 
-.footer-page {
-    display: flex;
-    align-items: baseline;
-}
 
 .social-network {
     margin-right: auto;
