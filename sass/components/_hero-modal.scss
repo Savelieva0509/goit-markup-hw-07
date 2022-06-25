@@ -1,3 +1,8 @@
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9) rotateZ(270deg);
+}
+
 .modal {
     position: absolute;
     left: 50%;
@@ -39,7 +44,7 @@
     fill: var(--accent-color);
 }
 
-.modal__title {
+.modal-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
