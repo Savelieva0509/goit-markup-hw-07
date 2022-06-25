@@ -425,7 +425,6 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9) rotateZ(270deg);
           transform: translate(-50%, -50%) scale(0.9) rotateZ(270deg);
@@ -833,7 +832,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .hero .container {
   max-width: 696px;
 }
