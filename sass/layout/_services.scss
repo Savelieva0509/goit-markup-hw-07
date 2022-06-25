@@ -1,0 +1,58 @@
+.services {
+    padding-bottom: 94px;
+}
+
+.services-title,
+.team-title,
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+
+    margin-bottom: 50px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+}
+
+.services-list__item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.services-list__image {
+    display: block;
+    height: auto;
+    min-width: 100%
+}
+
+.services-list__top-wrap {
+    position: relative;
+}
+
+.services-list__top-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
