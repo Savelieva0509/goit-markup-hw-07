@@ -1,10 +1,11 @@
 .features-list {
     display: flex;
+
+    &__item + &__item {
+            margin-left: 30px;
+        }
 }
 
-.features-list__item+.features-list__item {
-    margin-left: 30px;
-}
 
 .features-list__item::before {
     content: "";

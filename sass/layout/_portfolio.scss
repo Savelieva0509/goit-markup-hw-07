@@ -2,6 +2,10 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+
+    &__item + &__item {
+            margin-left: 8px;
+        }
 }
 
 .filter-list__button {
@@ -17,21 +21,18 @@
     padding: 6px 22px;
 
     transition: backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--primary-white-color);
+            background-color: var(--accent-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                    0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
 }
 
-.filter-list__item + .filter-list__item {
-    margin-left: 8px;
-}
-
-.filter-list__button:hover,
-.filter-list__button:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .button--active {
     color: var(--primary-white-color);
@@ -45,7 +46,6 @@
     margin-top: -30px;
     margin-left: -30px;
 }
-
 
 .portfolio-list__item {
     background: var(--primary-white-color);
@@ -77,6 +77,11 @@
     padding: 63px 24px 63px 24px;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .portfolio-list__link:hover &,
+        .portfolio-list__link:focus & {
+            transform: translateY(0);
+        }
 }
 
 .portfolio-list__link {
@@ -84,19 +89,14 @@
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
-.portfolio-list__link:hover,
-.portfolio-list__link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-list__link:hover .portfolio-list__top-text,
-.portfolio-list__link:focus .portfolio-list__top-text {
-    transform: translateY(0);
-}
 
 .portfolio-list__photo {
     display: block;
