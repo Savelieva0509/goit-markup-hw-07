@@ -38,10 +38,8 @@
 }
 
 .features-list__subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(14px,700, 1.14, 0.03em);
+    
     text-transform: uppercase;
     color: var(--title-text-color);
 
@@ -49,7 +47,5 @@
 }
 
 .features-list__text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font(14px, null, 1.7, 0.03em);
 }

@@ -9,11 +9,9 @@
 }
 
 .filter-list__button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    @include font(16px, 500, 1.6, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
+
     color: var(--title-text-color);
     background-color: var(--background-grey-color);
     border-radius: 4px;
@@ -66,9 +64,8 @@
     top: 0;
     transform: translateY(101%);
 
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
+    @include font(18px, null, 1.55, 0.03em);
+    
     height: 100%;
 
     color: var(--primary-white-color);
@@ -103,21 +100,17 @@
 }
 
 .portfolio-list__subtitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(18px, 700, 2, 0.06em);
+    
     color: var(--title-text-color);
 
     margin-bottom: 4px;
 }
 
 .portfolio-list__text {
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+    @include font(16px, null, 1.9, 0.03em);
+    
     color: var(--primary-text-color);
-
 }
 
 .portfolio-list__content {
