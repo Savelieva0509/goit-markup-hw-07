@@ -23,8 +23,6 @@
     }
 }
 
-
-
 .main-button--hero-form {
     @extend %button;
 
@@ -35,7 +33,7 @@
 
 .main-button--footer {
     @extend %button;
-
+    padding: 10px 29px;
     position: relative;
     text-align: left;
 }
