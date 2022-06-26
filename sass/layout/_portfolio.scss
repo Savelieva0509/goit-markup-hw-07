@@ -9,6 +9,8 @@
 }
 
 .filter-list__button {
+    @extend %button;
+
     @include font(16px, 500, 1.6, 0.03em);
     text-align: center;
 
@@ -32,7 +34,7 @@
 }
 
 
-.button--active {
+.button--active {   
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }

@@ -1,6 +1,8 @@
 
 .main-button {
     @include font(16px,700,1.9, 0.06em);
+
+    @extend %button;
     
     color: var(--primary-white-color);
     background-color: var(--accent-color);
@@ -24,12 +26,16 @@
 
 
 .main-button--hero-form {
+    @extend %button;
+
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
 .main-button--footer {
+    @extend %button;
+
     position: relative;
     text-align: left;
 }
