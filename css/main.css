@@ -964,7 +964,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.services-list:not(:last-child) {
+
+.services-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
