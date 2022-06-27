@@ -403,8 +403,17 @@ body {
 
 .main-button--footer {
   padding: 10px 29px;
-  position: relative;
-  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-icon-send {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
 }
 
 .backdrop {
@@ -789,15 +798,6 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-}
-
-.footer-icon-send {
-  position: absolute;
-  fill: var(--primary-white-color);
-  right: 28px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .hero {

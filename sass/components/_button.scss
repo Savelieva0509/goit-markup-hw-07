@@ -31,9 +31,17 @@
     display: block;
 }
 
+
+
 .main-button--footer {
     @extend %button;
     padding: 10px 29px;
-    position: relative;
-    text-align: left;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon-send {
+    fill: var(--primary-white-color);
+    margin-left: 10px;
 }
