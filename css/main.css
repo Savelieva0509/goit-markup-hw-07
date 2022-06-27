@@ -411,7 +411,7 @@ body {
           align-items: center;
 }
 
-.footer-icon-send {
+.main-button__icon {
   fill: var(--primary-white-color);
   margin-left: 10px;
 }
